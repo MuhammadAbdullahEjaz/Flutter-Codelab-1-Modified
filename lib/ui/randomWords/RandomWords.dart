@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test12/FavModel.dart';
-import 'package:test12/WordsModel.dart';
+import 'package:test12/state/FavModel.dart';
+import 'package:test12/state/WordsModel.dart';
 
-import 'LikedWords.dart';
+import '../likedWords/LikedWords.dart';
 
 class RandomWords extends StatefulWidget {
   const RandomWords({Key? key}) : super(key: key);
@@ -27,7 +27,8 @@ class _RandomWordsState extends State<RandomWords> {
                 onPressed: () {
                   _toLikedWords(context);
                 },
-                icon: const Icon(Icons.list))
+                icon: const Icon(Icons.list)
+            ),
           ],
         ),
         body: Consumer2<WordsModel, FavModel>(

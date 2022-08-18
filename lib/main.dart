@@ -1,11 +1,11 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test12/WordsModel.dart';
+import 'package:test12/state/WordsModel.dart';
 
-import 'FavModel.dart';
-import 'RandomWords.dart';
-import 'LikedWords.dart';
+import 'state/FavModel.dart';
+import 'ui/randomWords/RandomWords.dart';
+import 'ui/likedWords/LikedWords.dart';
 
 void main() {
   runApp(
